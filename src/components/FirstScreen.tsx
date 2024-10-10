@@ -7,11 +7,13 @@ export default function FirstScreen() {
     <div className={styles.mainContainer}>
       <Image
         src="/images/NewBisLogoEhWeb.png"
-        width={150}
-        height={150}
+        width={300}
+        height={300}
         alt="Logo Eh Web"
         style={{ objectFit: "contain" }}
       />
+      <div className={styles.splitter}></div>
+      <div className={styles.h1}>La création web à votre écoute</div>
     </div>
   );
 }

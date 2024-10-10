@@ -39,6 +39,15 @@
   grid-row-start: 2;
 }
 
+.upperPart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;

@@ -1,13 +1,10 @@
 .mainContainer {
   color: var(--text-main);
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 20vh;
-
-  /* border: 1px solid red; */
 }
 
 .nav {
@@ -28,4 +25,32 @@
   height: 100%;
   list-style-type: none;
   font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-main);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--text-main);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.link:hover::after,
+.link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+.link.active {
+  color: var(--text-secondary);
 }
