@@ -2,10 +2,14 @@ import React from "react";
 import styles from "../styles/Body.module.css";
 import FirstScreen from "./FirstScreen";
 
-export default function Body() {
+interface BodyProps {
+  isFirstScreenLogoVisible: boolean;
+}
+
+export default function Body({ isFirstScreenLogoVisible }: BodyProps) {
   return (
     <div className={styles.mainContainer}>
-      <FirstScreen />
+      <FirstScreen isLogoVisible={isFirstScreenLogoVisible} />
     </div>
   );
 }
