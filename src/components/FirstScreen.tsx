@@ -14,25 +14,18 @@ export default function FirstScreen({ isLogoVisible }: FirstScreenProps) {
           isLogoVisible ? styles.visible : styles.hidden
         }`}
       >
-        <Image
-          src="/images/NewBisLogoEhWeb.png"
-          width={300}
-          height={300}
-          alt="Logo Eh Web"
-          style={{ objectFit: "contain" }}
-        />
+        <div className={styles.logoContainer}>
+          <Image
+            src="/images/EhWebWhirl.svg"
+            width={150}
+            height={150}
+            alt="Logo Eh Web"
+            style={{ width: "50%", height: "auto", objectFit: "contain" }}
+          />
+        </div>
       </div>
       <div className={styles.splitter}></div>
       <div className={styles.h1}>La création web à votre écoute</div>
-      <div className={styles.imageContainer}>
-        <Image
-          src="/images/CorporateImage.png"
-          width={300}
-          height={300}
-          alt="Logo Eh Web"
-          style={{ width: "100%", height: "auto", objectFit: "cover" }}
-        />
-      </div>
     </div>
   );
 }

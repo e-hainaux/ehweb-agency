@@ -137,7 +137,7 @@ a.secondary {
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .page {
     padding: 32px;
     padding-bottom: 80px;
@@ -170,7 +170,7 @@ a.secondary {
     align-items: center;
     justify-content: center;
   }
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   .logo {

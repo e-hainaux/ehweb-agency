@@ -1,15 +1,11 @@
 import React from "react";
 import styles from "../styles/Body.module.css";
-import FirstScreen from "./FirstScreen";
+import { CorporateImage } from "./CorporateImage";
 
-interface BodyProps {
-  isFirstScreenLogoVisible: boolean;
-}
-
-export default function Body({ isFirstScreenLogoVisible }: BodyProps) {
+export default function Body() {
   return (
     <div className={styles.mainContainer}>
-      <FirstScreen isLogoVisible={isFirstScreenLogoVisible} />
+      <CorporateImage />
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 10;
+      const threshold = 100;
 
       setShowHeaderLogo(scrollPosition > threshold);
       setIsFirstScreenLogoVisible(scrollPosition <= threshold);
@@ -25,10 +25,11 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      <div className={styles.upperPart}>
-        <Header showHeaderLogo={showHeaderLogo} />
-        <Body isFirstScreenLogoVisible={isFirstScreenLogoVisible} />
-      </div>
+      <Header
+        showHeaderLogo={showHeaderLogo}
+        isFirstScreenLogoVisible={isFirstScreenLogoVisible}
+      />
+      <Body />
       <Footer />
     </div>
   );
