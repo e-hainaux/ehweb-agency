@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/ServicesInfo.module.css";
 import Image from "next/image";
 import { servicesInfo } from "@/app/data/servicesData";
+import Splitter from "./Splitter";
 
 export default function ServicesInfo() {
   return (
@@ -41,6 +42,7 @@ export default function ServicesInfo() {
           </div>
         </div>
       ))}
+      <Splitter />
     </div>
   );
 }
