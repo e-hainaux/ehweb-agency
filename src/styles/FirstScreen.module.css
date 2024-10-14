@@ -1,5 +1,6 @@
 .mainContainer {
   color: var(--text-main);
+  background-color: var(--background-main);
 
   display: flex;
   flex-direction: column;

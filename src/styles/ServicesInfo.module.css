@@ -1,0 +1,55 @@
+.mainContainer {
+  width: 88%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+  background: rgba(5, 22, 34, 1);
+  border: 1px solid #967f69;
+}
+
+.imageContainer,
+.textContainer {
+  flex: 2;
+}
+
+.voidContainer {
+  flex: 0.5;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.picto {
+  width: 80%;
+  height: auto;
+}
+.textContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.title {
+  font-size: 1.4rem;
+}
+
+.paragraph {
+  width: 80%;
+}

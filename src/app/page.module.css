@@ -1,5 +1,6 @@
 .page {
-  --background-maindarkblue: #051622;
+  --background-main: #051622;
+  --background-secondary: #001f33;
   --text-main: #1fbdb3;
   --text-secondary: #deb992;
   --gray-rgb: 0, 0, 0;
@@ -8,7 +9,7 @@
 
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
-  background: var(--background-maindarkblue);
+  background: var(--background-main);
   color: whitesmoke;
   display: flex;
   flex-direction: column;
