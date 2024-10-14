@@ -5,18 +5,23 @@ import Image from "next/image";
 
 interface NavBarProps {
   showLogo: boolean;
+  isNavBarTransparent: boolean;
 }
 
-export default function NavBar({ showLogo }: NavBarProps) {
+export default function NavBar({ showLogo, isNavBarTransparent }: NavBarProps) {
+  const navBarStyle = isNavBarTransparent
+    ? styles.transparent
+    : styles.blurryOpacity;
+
   return (
-    <nav className={styles.mainContainer}>
+    <nav className={`${styles.mainContainer} ${navBarStyle}`}>
       <div className={styles.leftGroup}>
         <Link href="/" className={styles.link}>
           Accueil
         </Link>
         {showLogo && (
           <Image
-            src="/images/NewBisLogoEhWeb.png"
+            src="/images/NewEhWebLogo.svg"
             alt="Header Logo"
             width={50}
             height={50}

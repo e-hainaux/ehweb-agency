@@ -9,14 +9,16 @@ export default function Home() {
   const [isFirstScreenLogoVisible, setIsFirstScreenLogoVisible] =
     useState(true);
   const [showHeaderLogo, setShowHeaderLogo] = useState(false);
+  const [isNavBarTransparent, setIsNavBarTransparent] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 100;
+      const threshold = 10;
 
       setShowHeaderLogo(scrollPosition > threshold);
       setIsFirstScreenLogoVisible(scrollPosition <= threshold);
+      setIsNavBarTransparent(scrollPosition <= threshold);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,6 +30,7 @@ export default function Home() {
       <Header
         showHeaderLogo={showHeaderLogo}
         isFirstScreenLogoVisible={isFirstScreenLogoVisible}
+        isNavBarTransparent={isNavBarTransparent}
       />
       <Body />
       <Footer />

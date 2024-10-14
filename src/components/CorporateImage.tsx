@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/FirstScreen.module.css";
+import styles from "../styles/CorporateImage.module.css";
 
 export function CorporateImage() {
   return (

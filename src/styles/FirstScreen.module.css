@@ -26,14 +26,8 @@
   pointer-events: none;
 }
 
-.splitter {
-  width: 75%;
-  height: 1px;
-  background-color: var(--text-secondary);
-}
-
 .h1 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: var(--text-secondary);
   margin-bottom: 24px;
 }
@@ -42,14 +36,6 @@
   width: auto;
   height: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imageContainer {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;

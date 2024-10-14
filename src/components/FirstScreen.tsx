@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/FirstScreen.module.css";
 import Image from "next/image";
+import Splitter from "./Splitter";
 
 interface FirstScreenProps {
   isLogoVisible: boolean;
@@ -16,7 +17,7 @@ export default function FirstScreen({ isLogoVisible }: FirstScreenProps) {
       >
         <div className={styles.logoContainer}>
           <Image
-            src="/images/EhWebWhirl.svg"
+            src="/images/NewEhWebLogo.svg"
             width={150}
             height={150}
             alt="Logo Eh Web"
@@ -24,7 +25,7 @@ export default function FirstScreen({ isLogoVisible }: FirstScreenProps) {
           />
         </div>
       </div>
-      <div className={styles.splitter}></div>
+      <Splitter />
       <div className={styles.h1}>La création web à votre écoute</div>
     </div>
   );
