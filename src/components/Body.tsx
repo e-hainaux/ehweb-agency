@@ -3,6 +3,8 @@ import styles from "../styles/Body.module.css";
 import { CorporateImage } from "./CorporateImage";
 import Splitter from "./Splitter";
 import ServicesInfo from "./ServicesInfo";
+import ContactFrame from "./ContactFrame";
+import CreationSteps from "./CreationSteps";
 
 export default function Body() {
   return (
@@ -10,6 +12,8 @@ export default function Body() {
       <CorporateImage />
       <Splitter />
       <ServicesInfo />
+      <ContactFrame />
+      <CreationSteps />
     </div>
   );
 }

@@ -1,31 +1,38 @@
 import React from "react";
-import styles from "@/styles/ServicesInfo.module.css";
+import styles from "@/styles/CreationSteps.module.css";
 import Image from "next/image";
-import { servicesInfo } from "@/app/data/servicesData";
+import { stepsOfCreation } from "@/app/data/stepsOfCreation";
 import Splitter from "./Splitter";
 
-export default function ServicesInfo() {
+export default function CreationSteps() {
   return (
     <div className={styles.mainContainer}>
-      {servicesInfo.map((service) => (
+      <div className={styles.mainTitleContainer}>
+        <h1 className={styles.mainTitle}>Étapes de création de votre projet</h1>
+      </div>
+      <div className={styles.lineContainer}>
+        <div className={styles.line}></div>
+      </div>
+
+      {stepsOfCreation.map((step) => (
         <div
-          key={service.id}
+          key={step.id}
           className={`${styles.serviceContainer} ${
-            service.id % 2 === 0 ? styles.reverse : ""
+            step.id % 2 === 0 ? styles.reverse : ""
           }`}
         >
           <div className={styles.textContainer}>
             <div className={styles.textWrapper}>
-              <h2 className={styles.title}>{service.title}</h2>
+              <h2 className={styles.title}>{step.title}</h2>
               <p className={styles.paragraph}>
-                {Array.isArray(service.paragraph)
-                  ? service.paragraph.map((text, index) => (
+                {Array.isArray(step.paragraph)
+                  ? step.paragraph.map((text, index) => (
                       <span key={index}>
                         {text}
                         <br />
                       </span>
                     ))
-                  : service.paragraph}
+                  : step.paragraph}
               </p>
             </div>
           </div>
@@ -33,8 +40,8 @@ export default function ServicesInfo() {
 
           <div className={styles.imageContainer}>
             <Image
-              src={service.imageUrl}
-              alt={service.title}
+              src={step.imageUrl}
+              alt={step.title}
               width={681}
               height={419}
               quality={100}

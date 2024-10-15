@@ -3,8 +3,8 @@ import styles from "@/styles/Splitter.module.css";
 
 export default function Splitter() {
   return (
-    <>
-      <div className={styles.mainContainer}></div>
-    </>
+    <div className={styles.mainContainer}>
+      <div className={styles.splitterContainer}></div>
+    </div>
   );
 }

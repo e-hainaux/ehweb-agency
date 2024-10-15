@@ -1,6 +1,15 @@
 .mainContainer {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin: 32px 0;
+}
+
+.splitterContainer {
   width: 75%;
   height: 1px;
   background-color: var(--text-secondary);
-  margin: 24px 0;
 }

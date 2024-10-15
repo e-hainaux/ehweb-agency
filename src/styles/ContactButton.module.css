@@ -1,0 +1,38 @@
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  margin-top: 24px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 8px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: var(--background-secondary);
+  border: 2px solid #1fbdb3;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(31, 189, 179, 0.25);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  color: white;
+  border: 2px solid #17a39d;
+
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 6px rgba(31, 189, 179, 0.15);
+}
+
+.button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}

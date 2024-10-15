@@ -12,6 +12,10 @@ export default function Home() {
   const [isNavBarTransparent, setIsNavBarTransparent] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const threshold = 10;

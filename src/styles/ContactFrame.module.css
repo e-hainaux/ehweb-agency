@@ -1,0 +1,17 @@
+.mainContainer {
+  width: 100vw;
+  height: auto;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  background: linear-gradient(to bottom, #001f33, #051622);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-main);
+}
