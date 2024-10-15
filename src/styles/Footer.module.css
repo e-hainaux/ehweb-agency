@@ -10,7 +10,7 @@
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 
   /* border-top: 1px solid #967f69; */
-  background: linear-gradient(to top, #001f33 50%, #051622);
+  background: linear-gradient(to bottom, #001f33 50%, #051622);
 }
 
 .footerInfos {

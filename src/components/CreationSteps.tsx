@@ -17,7 +17,7 @@ export default function CreationSteps() {
       {stepsOfCreation.map((step) => (
         <div
           key={step.id}
-          className={`${styles.serviceContainer} ${
+          className={`${styles.stepContainer} ${
             step.id % 2 === 0 ? styles.reverse : ""
           }`}
         >
