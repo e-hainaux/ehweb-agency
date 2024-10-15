@@ -4,10 +4,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 10%;
+  height: 100%;
   margin-top: 200px;
   padding: 40px;
-  background: linear-gradient(to top, #001f33, #051622);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+
+  /* border-top: 1px solid #967f69; */
+  background: linear-gradient(to top, #001f33 50%, #051622);
 }
 
 .footerInfos {
