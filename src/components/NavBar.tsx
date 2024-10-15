@@ -19,15 +19,15 @@ export default function NavBar({ showLogo, isNavBarTransparent }: NavBarProps) {
         <Link href="/" className={styles.link}>
           Accueil
         </Link>
-        {showLogo && (
+        <div className={styles.logoContainer}>
           <Image
             src="/images/NewEhWebLogo.svg"
             alt="Header Logo"
             width={50}
             height={50}
-            className={styles.logo}
+            className={`${styles.logo} ${showLogo ? styles.show : styles.hide}`}
           />
-        )}
+        </div>
       </div>
       <div className={styles.rightGroup}>
         <Link href="/about" className={styles.link}>
