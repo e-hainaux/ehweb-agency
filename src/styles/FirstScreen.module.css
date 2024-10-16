@@ -41,3 +41,14 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 700px) {
+  .mainContainer {
+    justify-content: center;
+    height: 50%;
+  }
+
+  .h1 {
+    font-size: 1.4em;
+  }
+}
