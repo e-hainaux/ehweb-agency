@@ -7,9 +7,7 @@ export default function ContactFrame() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.title}>Une estimation pour votre projet ?</div>
-      <div className={styles.title}>
-        Obtenez un devis gratuit sur simple demande.
-      </div>
+      <div className={styles.title}>Devis gratuit sur simple demande.</div>
       <ContactButton />
       <Splitter />
     </div>

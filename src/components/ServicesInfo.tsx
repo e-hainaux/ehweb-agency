@@ -7,6 +7,9 @@ import Splitter from "./Splitter";
 export default function ServicesInfo() {
   return (
     <div className={styles.mainContainer}>
+      <div className={styles.mainTitleContainer}>
+        <h1 className={styles.mainTitle}>Services proposés</h1>
+      </div>
       {servicesInfo.map((service) => (
         <div
           key={service.id}

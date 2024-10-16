@@ -110,3 +110,26 @@
 .paragraph {
   width: 80%;
 }
+
+@media (max-width: 700px) {
+  .mainTitle {
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+  .stepContainer {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    flex-direction: column;
+  }
+  .textContainer {
+    width: 100%;
+  }
+  .textWrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    align-self: center;
+  }
+}
