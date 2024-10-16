@@ -71,3 +71,15 @@
   font-size: 1.2em;
   color: var(--text-secondary);
 }
+
+@media (max-width: 700px) {
+  .mainContainer {
+    height: 100%;
+    margin: 0;
+  }
+  .footerInfos {
+    flex-direction: column;
+    height: 100%;
+    gap: 56px;
+  }
+}

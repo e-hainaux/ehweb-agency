@@ -58,9 +58,8 @@ export default function Footer() {
 
           <div className={styles.descriptionContainer}>
             <p className={styles.description}>Proche d’Arras</p>
-            <p className={styles.description}>
-              Déplacements possibles sur Lille ou Paris
-            </p>
+            <p className={styles.description}>Déplacements possibles</p>
+            <p className={styles.description}>sur Lille ou Paris</p>
           </div>
         </div>
       </div>
