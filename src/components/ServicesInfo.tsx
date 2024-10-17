@@ -6,7 +6,7 @@ import Splitter from "./Splitter";
 
 export default function ServicesInfo() {
   return (
-    <div className={styles.mainContainer}>
+    <section className={styles.mainContainer}>
       <div className={styles.mainTitleContainer}>
         <h1 className={styles.mainTitle}>Services proposés</h1>
       </div>
@@ -47,6 +47,6 @@ export default function ServicesInfo() {
         </div>
       ))}
       <Splitter />
-    </div>
+    </section>
   );
 }

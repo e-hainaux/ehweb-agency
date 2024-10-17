@@ -5,7 +5,7 @@ import Splitter from "./Splitter";
 
 export default function Footer() {
   return (
-    <div className={styles.mainContainer}>
+    <footer className={styles.mainContainer}>
       <div className={styles.footerInfos}>
         <div className={styles.phone}>
           <div className={styles.titleContainer}>
@@ -67,6 +67,6 @@ export default function Footer() {
       <div className={styles.credits}>
         <p>Emilien Hainaux © 2024</p>
       </div>
-    </div>
+    </footer>
   );
 }

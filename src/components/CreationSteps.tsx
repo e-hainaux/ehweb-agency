@@ -6,7 +6,7 @@ import Splitter from "./Splitter";
 
 export default function CreationSteps() {
   return (
-    <div className={styles.mainContainer}>
+    <section className={styles.mainContainer}>
       <div className={styles.mainTitleContainer}>
         <h1 className={styles.mainTitle}>Étapes de création de votre projet</h1>
       </div>
@@ -51,6 +51,6 @@ export default function CreationSteps() {
         </div>
       ))}
       <Splitter />
-    </div>
+    </section>
   );
 }

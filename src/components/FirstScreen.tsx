@@ -9,7 +9,7 @@ interface FirstScreenProps {
 
 export default function FirstScreen({ isLogoVisible }: FirstScreenProps) {
   return (
-    <div className={styles.mainContainer}>
+    <section className={styles.mainContainer}>
       <div
         className={`${styles.logoContainer} ${
           isLogoVisible ? styles.visible : styles.hidden
@@ -27,6 +27,6 @@ export default function FirstScreen({ isLogoVisible }: FirstScreenProps) {
       </div>
       <Splitter />
       <div className={styles.h1}>La création web à votre écoute</div>
-    </div>
+    </section>
   );
 }

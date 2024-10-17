@@ -3,10 +3,11 @@ import styles from "@/styles/about/Hello.module.css";
 
 export default function Hello() {
   return (
-    <div className={styles.mainContainer}>
+    <section className={styles.mainContainer}>
+      <div></div>
       <div className={styles.titleContainer}>
         <h1 className={styles.title}> Hello !</h1>
       </div>
-    </div>
+    </section>
   );
 }

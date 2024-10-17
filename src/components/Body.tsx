@@ -8,12 +8,12 @@ import CreationSteps from "./CreationSteps";
 
 export default function Body() {
   return (
-    <div className={styles.mainContainer}>
+    <main className={styles.mainContainer}>
       <CorporateImage />
       <Splitter />
       <ServicesInfo />
       <ContactFrame />
       <CreationSteps />
-    </div>
+    </main>
   );
 }
