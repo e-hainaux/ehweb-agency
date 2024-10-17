@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import styles from "./page.module.css";
 import NavBar from "@/components/NavBar";
-import Hello from "@/components/about/Hello";
+import BodyAbout from "@/components/about/BodyAbout";
 import Footer from "@/components/Footer";
 
 export default function About() {
@@ -32,7 +32,7 @@ export default function About() {
         showLogo={showHeaderLogo}
         isNavBarTransparent={isNavBarTransparent}
       />
-      <Hello />
+      <BodyAbout />
       <Footer />
     </div>
   );

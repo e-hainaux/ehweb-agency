@@ -1,8 +1,63 @@
 .mainContainer {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 80%;
+}
+
+.introductionContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  gap: 48px;
+  padding-top: 150px;
+}
+
+.imageContainer,
+.introductionContainer {
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 1;
+}
+
+.hiddenLeft {
+  transform: translateY(100%) scale(0.8);
+  z-index: 1;
+}
+
+.hiddenRight {
+  transform: translateX(100%) rotate(-90deg) translateY(100%);
+}
+
+.titleContainer,
+.paragraphsContainer {
+  width: 100%;
+  height: auto;
+}
+
+.title,
+.paragraph {
+  color: var(--text-secondary);
+}
+
+.title {
+  font-size: 2em;
+}
+
+.paragraph {
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
