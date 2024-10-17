@@ -14,6 +14,9 @@
 .imageContainer {
   width: 100%;
   height: 80%;
+
+  animation: fadeIn 1s ease-out forwards;
+  transform-origin: center;
 }
 
 .introductionContainer {
@@ -27,15 +30,44 @@
   padding-top: 150px;
 }
 
-.imageContainer,
-.introductionContainer {
-  transition: transform 1s ease-out, opacity 1s ease-out;
-  opacity: 1;
+@keyframes slideDown {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    border: none;
+    border-radius: 0;
+  }
+  30% {
+    transform: scale(0.6) translateY(0);
+    opacity: 1;
+    border: none;
+    border-radius: 0;
+  }
+  90% {
+    transform: scale(0.8) translateY(100%);
+    opacity: 1;
+    border: none;
+    border-radius: 0;
+  }
+  100% {
+    transform: scale(0.8) translateY(100%);
+    opacity: 1;
+    border: 2px solid red;
+    border-radius: 8px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hiddenLeft {
-  transform: translateY(100%) scale(0.8);
-  z-index: 1;
+  animation: slideDown 1.5s ease-out forwards;
 }
 
 .hiddenRight {
