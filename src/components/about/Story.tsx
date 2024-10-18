@@ -62,10 +62,10 @@ export default function Story() {
           </p>
           <p className={styles.paragraph}>
             Je me suis initié aux bases du développement à l&apos;aide de
-            tutoriels et de cours en ligne. Autant attiré par l'aspect technique
-            que créatif, je me suis lancé dans une formation à La Capsule en
-            2024, où j&apos;ai acquis des compétences en JavaScript, Node.js,
-            Express, React et React Native.
+            tutoriels et de cours en ligne. Autant attiré par l&apos;aspect
+            technique que créatif, je me suis lancé dans une formation à La
+            Capsule en 2024, où j&apos;ai acquis des compétences en JavaScript,
+            Node.js, Express, React et React Native.
           </p>
           <p className={styles.paragraph}>
             J&apos;ai réalisé dans la foulée deux projets en React.js en tant

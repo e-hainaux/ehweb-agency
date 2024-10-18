@@ -52,7 +52,7 @@ export default function Hello() {
           <h1 className={styles.title}>Bonjour !</h1>
         </div>
         <div className={styles.paragraphsContainer}>
-          <p className={styles.paragraph}>Moi, c'est Emilien.</p>
+          <p className={styles.paragraph}>Moi, c&apos;est Emilien.</p>
           <p className={styles.paragraph}>
             Je suis développeur web fullstack junior.
           </p>
