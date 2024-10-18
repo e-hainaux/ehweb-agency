@@ -39,7 +39,7 @@ export default function Hello() {
           width={1000}
           height={1000}
           quality={100}
-          alt="Logo Eh Web"
+          alt="Photo of Emilien"
           style={{ width: "auto", height: "100%", objectFit: "contain" }}
         />
       </div>

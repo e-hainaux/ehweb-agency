@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   overflow: visible;
+  z-index: 1;
 }
 
 .imageContainer {
@@ -28,6 +29,7 @@
   align-items: center;
   gap: 48px;
   padding-top: 150px;
+  transition: transform 0.8s ease-out;
 }
 
 @keyframes slideDown {
@@ -37,23 +39,17 @@
     border: none;
     border-radius: 0;
   }
-  30% {
-    transform: scale(0.6) translateY(0);
-    opacity: 1;
-    border: none;
-    border-radius: 0;
+  20% {
+    transform: scale(0.6) translateY(50%) translateX(-20%);
+    opacity: 0.8;
   }
-  90% {
-    transform: scale(0.8) translateY(100%);
-    opacity: 1;
-    border: none;
-    border-radius: 0;
+  60% {
+    transform: scale(0.6) translateY(150%) translateX(-20%);
+    opacity: 0.3;
   }
   100% {
-    transform: scale(0.8) translateY(100%);
-    opacity: 1;
-    border: 2px solid red;
-    border-radius: 8px;
+    transform: scale(0.6) translateY(150%) translateX(-20%);
+    opacity: 0;
   }
 }
 
@@ -67,11 +63,12 @@
 }
 
 .hiddenLeft {
-  animation: slideDown 1.5s ease-out forwards;
+  animation: slideDown 1s ease-out forwards;
 }
 
 .hiddenRight {
-  transform: translateX(100%) rotate(-90deg) translateY(100%);
+  transform: translateX(100%) rotate(-90deg);
+  z-index: 999;
 }
 
 .titleContainer,
