@@ -34,7 +34,7 @@ export default function Misc() {
   }, []);
 
   return (
-    <div className={styles.mainContainer}>
+    <section className={styles.mainContainer}>
       <div className={styles.frameContainer}>
         <div
           ref={iconRef}
@@ -58,6 +58,6 @@ export default function Misc() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

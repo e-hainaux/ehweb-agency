@@ -6,10 +6,10 @@ import Misc from "./Misc";
 
 export default function BodyAbout() {
   return (
-    <div className={styles.mainContainer}>
+    <article className={styles.mainContainer}>
       <Hello />
       <Story />
       <Misc />
-    </div>
+    </article>
   );
 }

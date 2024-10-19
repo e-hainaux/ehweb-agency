@@ -34,7 +34,7 @@ export default function Story() {
   }, []);
 
   return (
-    <div className={styles.mainContainer}>
+    <section className={styles.mainContainer}>
       <div
         ref={imageRef}
         className={`${styles.imageContainer} ${
@@ -76,6 +76,6 @@ export default function Story() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
