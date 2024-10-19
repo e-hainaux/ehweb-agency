@@ -5,8 +5,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  background: var(--background-secondary);
+  background: var(--background-main);
   z-index: 2;
+
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes fadeIn {

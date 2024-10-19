@@ -1,0 +1,41 @@
+.mainContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.frameContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.pictoContainer {
+  width: 20%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictoContainer {
+  flex: 1;
+  flex-direction: column;
+  justif-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.textContainer {
+  flex: 3;
+}
+
+.paragraphsContainer {
+  width: 80%;
+}
