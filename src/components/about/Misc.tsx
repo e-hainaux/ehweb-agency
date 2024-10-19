@@ -46,7 +46,7 @@ export default function Misc() {
         </div>
         <div className={styles.textContainer}>
           <div className={styles.subTitle}>
-            <h2>J'aime</h2>
+            <h2>J&apos;aime</h2>
           </div>
           <div className={styles.paragraphsContainer}>
             <p className={styles.paragraph}>
