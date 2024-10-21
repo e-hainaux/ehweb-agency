@@ -44,17 +44,21 @@ export default function Hello() {
           style={{ width: "100%", height: "auto", objectFit: "contain" }}
         />
       </div>
-      <div
-        className={`${styles.introductionContainer} ${
-          !isVisible ? styles.hiddenRight : ""
-        }`}
-      >
-        <div className={styles.titleContainer}>
+      <div className={styles.introductionContainer}>
+        <div
+          className={`${styles.titleContainer} ${
+            !isVisible ? styles.hiddenRight : ""
+          }`}
+        >
           <h1 className={styles.title}>Bonjour !</h1>
+          <h2 className={styles.subTitle}>Moi, c&apos;est Emilien.</h2>
         </div>
-        <div className={styles.paragraphsContainer}>
-          <p className={styles.paragraph}>Moi, c&apos;est Emilien.</p>
-          <p className={styles.paragraph}>
+        <div className={styles.paragraphContainer}>
+          <p
+            className={`${styles.paragraph} ${
+              !isVisible ? styles.hiddenBottom : ""
+            }`}
+          >
             Je suis développeur web fullstack junior.
           </p>
         </div>

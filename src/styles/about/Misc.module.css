@@ -17,7 +17,6 @@
   justify-content: center;
   align-items: center;
   gap: 56px;
-  /* border: 2px dotted pink; */
 }
 
 .pictoContainer {
@@ -26,7 +25,6 @@
   justify-content: center;
   align-items: flex-end;
   text-align: right;
-  /* border: 1px solid red; */
 }
 
 .textContainer {
@@ -36,15 +34,12 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
-  /* border: 1px solid green; */
 }
 
 .subTitle {
   flex: 1;
-  /* border: 1px solid white; */
 }
 
 .paragraphsContainer {
   flex: 1;
-  /* border: 1px solid yellow; */
 }
