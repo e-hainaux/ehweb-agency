@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 40px;
+  padding: 56px;
 }
 
 .frameContainer {
@@ -14,28 +16,35 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-}
-
-.pictoContainer {
-  width: 20%;
-  height: 20%;
-  justify-content: center;
-  align-items: center;
+  gap: 56px;
+  /* border: 2px dotted pink; */
 }
 
 .pictoContainer {
   flex: 1;
   flex-direction: column;
-  justif-content: center;
+  justify-content: center;
   align-items: flex-end;
   text-align: right;
+  /* border: 1px solid red; */
 }
 
 .textContainer {
-  flex: 3;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  /* border: 1px solid green; */
+}
+
+.subTitle {
+  flex: 1;
+  /* border: 1px solid white; */
 }
 
 .paragraphsContainer {
-  width: 80%;
+  flex: 1;
+  /* border: 1px solid yellow; */
 }

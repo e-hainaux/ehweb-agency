@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../../styles/about/Misc.module.css";
-import { FaRegHeart } from "react-icons/fa";
+import { frameData } from "@/app/data/miscData";
 
 export default function Misc() {
   const [isVisible, setIsVisible] = useState(false);
   const iconRef = useRef(null);
 
   useEffect(() => {
+    const currentIconRef = iconRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -22,42 +24,42 @@ export default function Misc() {
       }
     );
 
-    if (iconRef.current) {
-      observer.observe(iconRef.current);
+    if (currentIconRef) {
+      observer.observe(currentIconRef);
     }
 
     return () => {
-      if (iconRef.current) {
-        observer.unobserve(iconRef.current);
+      if (currentIconRef) {
+        observer.unobserve(currentIconRef);
       }
     };
   }, []);
 
   return (
     <section className={styles.mainContainer}>
-      <div className={styles.frameContainer}>
-        <div
-          ref={iconRef}
-          className={`${styles.pictoContainer} ${
-            isVisible ? styles.fadeIn : styles.fadeOut
-          }`}
-        >
-          <FaRegHeart size={32} color="#deb992" />{" "}
-        </div>
-        <div className={styles.textContainer}>
-          <div className={styles.subTitle}>
-            <h2>J&apos;aime</h2>
+      {frameData.map((frame) => {
+        const IconComponent = frame.picto;
+        return (
+          <div key={frame.id} className={styles.frameContainer}>
+            <div
+              ref={iconRef}
+              className={`${styles.pictoContainer} ${
+                isVisible ? styles.fadeIn : styles.fadeOut
+              }`}
+            >
+              <IconComponent size={32} color="#e91e63" />{" "}
+            </div>
+            <div className={styles.textContainer}>
+              <div className={styles.subTitle}>
+                <h2>{frame.subtitle}</h2>
+              </div>
+              <div className={styles.paragraphsContainer}>
+                <p className={styles.paragraph}>{frame.paragraph}</p>
+              </div>
+            </div>
           </div>
-          <div className={styles.paragraphsContainer}>
-            <p className={styles.paragraph}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in
-              velit eget dolor euismod vulputate. Praesent facilisis accumsan
-              orci, at sodales quam consequat in. Sed vitae magna at nisl
-              eleifend malesuada.
-            </p>
-          </div>
-        </div>
-      </div>
+        );
+      })}
     </section>
   );
 }

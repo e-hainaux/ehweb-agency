@@ -36,11 +36,12 @@ export default function Hello() {
       >
         <Image
           src="/images/headPic.png"
-          width={1000}
-          height={1000}
+          width={500}
+          height={500}
           quality={100}
+          priority={true}
           alt="Photo of Emilien"
-          style={{ width: "auto", height: "100%", objectFit: "contain" }}
+          style={{ width: "100%", height: "auto", objectFit: "contain" }}
         />
       </div>
       <div
