@@ -6,8 +6,8 @@ import Splitter from "./Splitter";
 export default function ContactFrame() {
   return (
     <section className={styles.mainContainer}>
-      <div className={styles.title}>Une estimation pour votre projet ?</div>
-      <div className={styles.title}>Devis gratuit sur simple demande.</div>
+      <p className={styles.question}>Une estimation pour votre projet ?</p>
+      <p className={styles.answer}>Devis gratuit sur simple demande.</p>
       <ContactButton />
       <Splitter />
     </section>

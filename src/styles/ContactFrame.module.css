@@ -10,14 +10,22 @@
   background: linear-gradient(to bottom, #001f33, #051622);
 }
 
-.title {
+.question,
+.answer {
   font-size: 24px;
   font-weight: bold;
+}
+
+.question {
   color: var(--text-main);
+}
+.answer {
+  color: var(--text-secondary);
 }
 
 @media (max-width: 700px) {
-  .title {
+  .question,
+  .answer {
     font-size: 1em;
   }
 }
