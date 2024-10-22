@@ -53,8 +53,8 @@ export default function Story() {
         />
       </div>
       <div className={styles.storyContainer}>
-        <div className={styles.subTitle}>
-          <h2>Mon parcours</h2>
+        <div className={styles.subTitleContainer}>
+          <h2 className={styles.subTitle}>Mon parcours</h2>
         </div>
         <div className={styles.presentation}>
           <p className={styles.paragraph}>

@@ -38,8 +38,21 @@
 
 .subTitle {
   flex: 1;
+  color: var(--text-secondary);
 }
 
 .paragraphsContainer {
   flex: 1;
+}
+
+.paragraph {
+  text-indent: 1em;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    padding: 40px 20px;
+  }
 }

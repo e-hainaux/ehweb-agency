@@ -1,8 +1,11 @@
 .page {
   --background-main: #051622;
   --background-secondary: #001f33;
+
   --text-main: #1fbdb3;
   --text-secondary: #deb992;
+  --text-tertiary: #e91e63;
+
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);

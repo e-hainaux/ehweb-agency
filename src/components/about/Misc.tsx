@@ -54,7 +54,15 @@ export default function Misc() {
                 <h2>{frame.subtitle}</h2>
               </div>
               <div className={styles.paragraphsContainer}>
-                <p className={styles.paragraph}>{frame.paragraph}</p>
+                {Array.isArray(frame.paragraph) ? (
+                  frame.paragraph.map((text, index) => (
+                    <p key={index} className={styles.paragraph}>
+                      {text}
+                    </p>
+                  ))
+                ) : (
+                  <p className={styles.paragraph}>{frame.paragraph}</p>
+                )}
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@
   background: var(--background-main);
   z-index: 2;
 
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes fadeIn {
@@ -71,10 +71,14 @@
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.subTitle {
+.subTitleContainer {
   width: 80%;
   font-size: 1.2em;
   margin-bottom: 40px;
+}
+
+.subTitle {
+  color: var(--text-secondary);
 }
 
 .storyContainer {
@@ -123,7 +127,7 @@
     left: 0;
     width: 88%;
     height: 5px;
-    background-color: var(--text-secondary);
+    background-color: var(--text-tertiary);
   }
 
   .image {
@@ -140,7 +144,7 @@
     padding: 20px;
   }
 
-  .subTitle {
+  .subTitleContainer {
     width: 100%;
     margin-bottom: 20px;
   }
