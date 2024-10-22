@@ -18,12 +18,13 @@
 
 .imageContainer {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
   animation: fadeIn 1s ease-out forwards;
   transform-origin: center;
 }
@@ -36,7 +37,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 48px;
-  padding-top: 150px;
+  padding-top: 120px;
   overflow: visible;
   z-index: 999;
   transition: transform 0.8s ease-out;
@@ -150,13 +151,21 @@
   }
   .imageContainer {
     position: fixed;
-    left: -25%;
+    left: -20%;
     bottom: 20%;
-    height: 600px;
-    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   }
+
+  .image {
+    max-height: 60vh;
+  }
+
   .hiddenLeft {
     opacity: 0;
     transform: scale(0.9);
@@ -174,6 +183,7 @@
     justify-content: flex-start;
     align-items: flex-end;
 
+    padding-top: 12vh;
     padding-right: 24px;
   }
   .titleContainer,
@@ -182,7 +192,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    gap: 24px;
+    gap: 2vh;
   }
   .paragraphContainer {
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
