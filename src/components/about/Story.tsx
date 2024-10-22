@@ -7,6 +7,7 @@ export default function Story() {
   const imageRef = useRef(null);
 
   useEffect(() => {
+    const currentImageRef = imageRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -18,17 +19,17 @@ export default function Story() {
         });
       },
       {
-        threshold: 0.6,
+        threshold: 0.61,
       }
     );
 
-    if (imageRef.current) {
-      observer.observe(imageRef.current);
+    if (currentImageRef) {
+      observer.observe(currentImageRef);
     }
 
     return () => {
-      if (imageRef.current) {
-        observer.unobserve(imageRef.current);
+      if (currentImageRef) {
+        observer.unobserve(currentImageRef);
       }
     };
   }, []);
@@ -47,7 +48,8 @@ export default function Story() {
           height={500}
           quality={100}
           alt="Photo of Emilien"
-          style={{ width: "100%", height: "auto", objectFit: "contain" }}
+          style={{ objectFit: "contain" }}
+          className={styles.image}
         />
       </div>
       <div className={styles.storyContainer}>
