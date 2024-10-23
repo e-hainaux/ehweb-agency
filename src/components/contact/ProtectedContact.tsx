@@ -30,7 +30,7 @@ const ProtectedContact: React.FC<ContactInfo> = ({ email, phone }) => {
             <span className={styles.contactInfo}>{email}</span>
           ) : (
             <button onClick={decodeEmail} className={styles.button}>
-              Afficher l'email
+              Afficher l&apos;email
             </button>
           )}
         </div>
