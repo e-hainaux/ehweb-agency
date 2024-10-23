@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdMail, MdPhone } from "react-icons/md";
 import styles from "@/styles/contact/ProtectedContact.module.css";
-import OtherContacts from "./otherContacts";
+import OtherContacts from "./OtherContacts";
 
 interface ContactInfo {
   email: string;
