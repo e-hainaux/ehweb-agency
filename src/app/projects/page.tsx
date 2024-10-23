@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import Footer from "@/components/Footer";
 import styles from "./page.module.css";
 import NavBar from "@/components/NavBar";
+import ProjectsWrapper from "@/components/projects/projectsWrapper";
+import Footer from "@/components/Footer";
 
 export default function About() {
   const showHeaderLogo = true;
@@ -31,6 +32,7 @@ export default function About() {
         showLogo={showHeaderLogo}
         isNavBarTransparent={isNavBarTransparent}
       />
+      <ProjectsWrapper isLoading={false} />
 
       <Footer />
     </div>

@@ -1,0 +1,67 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: var(--background-secondary);
+
+  border-radius: 8px;
+  width: 80vw;
+  max-width: 1080px;
+  height: 88vh;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.scrollableView {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  overflow-y: scroll;
+  scrollbar-width: none; /* Pour Firefox */
+  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+}
+
+.scrollableView::-webkit-scrollbar {
+  display: none; /* Pour Chrome, Safari et Opera */
+}
+
+.closeButton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--text-main);
+
+  background-color: var(--background-main);
+  border-radius: 50px;
+  z-index: 100;
+}
+
+.closeButton:hover {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .modalContent {
+    width: 92vw;
+    height: 88vh;
+  }
+}
