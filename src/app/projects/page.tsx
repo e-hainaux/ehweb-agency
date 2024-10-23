@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import NavBar from "@/components/NavBar";
 import ProjectsWrapper from "@/components/projects/projectsWrapper";
+import Splitter from "@/components/Splitter";
 import Footer from "@/components/Footer";
 
 export default function About() {
@@ -33,7 +34,7 @@ export default function About() {
         isNavBarTransparent={isNavBarTransparent}
       />
       <ProjectsWrapper isLoading={false} />
-
+      <Splitter />
       <Footer />
     </div>
   );

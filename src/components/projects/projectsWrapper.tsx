@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "@/styles/projects/projectsWrapper.module.css";
+import Splitter from "../Splitter";
 import ProjectCard from "../projects/ProjectCard";
 import ProjectModal from "../projects/ProjectModal";
 import ProjectModalContent from "../projects/ProjectModalContent";
@@ -31,14 +32,10 @@ const ProjectsWrapper: React.FC<ProjectsWrapperProps> = ({ isLoading }) => {
   return (
     <section className={styles.mainContainer}>
       <span className={styles.title}>Réalisations</span>
-
+      <Splitter />
       <div className={styles.projectsGrid}>
         {projects.map((project) => (
-          <div
-            key={project.id}
-            className={styles.projectCard}
-            onClick={() => openModal(project)}
-          >
+          <>
             <ProjectCard
               id={project.id}
               title={project.title}
@@ -46,7 +43,7 @@ const ProjectsWrapper: React.FC<ProjectsWrapperProps> = ({ isLoading }) => {
               imageUrl={project.imageUrl}
               onClick={() => openModal(project)}
             />
-          </div>
+          </>
         ))}
       </div>
 

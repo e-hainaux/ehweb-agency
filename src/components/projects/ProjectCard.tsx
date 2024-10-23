@@ -32,11 +32,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       <style jsx>{`
         .project-card {
+          width: 100%;
           min-height: 350px;
           border: none;
           border-radius: 24px;
           overflow: hidden;
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color: var(--background-secondary);
           transition: transform 0.3s ease;
         }
 
