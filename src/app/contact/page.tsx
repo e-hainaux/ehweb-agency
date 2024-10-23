@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
+import NavBar from "@/components/NavBar";
+import BodyContact from "@/components/contact/BodyContact";
 import Footer from "@/components/Footer";
 import styles from "./page.module.css";
-import NavBar from "@/components/NavBar";
 
 export default function About() {
   const showHeaderLogo = true;
@@ -31,7 +31,7 @@ export default function About() {
         showLogo={showHeaderLogo}
         isNavBarTransparent={isNavBarTransparent}
       />
-
+      <BodyContact />
       <Footer />
     </div>
   );

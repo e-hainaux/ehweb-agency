@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import styles from "@/styles/projects/projectsWrapper.module.css";
+import styles from "@/styles/projects/BodyProjects.module.css";
 import Splitter from "../Splitter";
-import ProjectCard from "../projects/ProjectCard";
-import ProjectModal from "../projects/ProjectModal";
-import ProjectModalContent from "../projects/ProjectModalContent";
+import ProjectCard from "./ProjectCard";
+import ProjectModal from "./ProjectModal";
+import ProjectModalContent from "./ProjectModalContent";
 import { projects, Project } from "@/app/data/projectsData";
 
-interface ProjectsWrapperProps {
+interface BodyProjectsProps {
   isLoading: boolean;
 }
 
-const ProjectsWrapper: React.FC<ProjectsWrapperProps> = ({ isLoading }) => {
+const BodyProjects: React.FC<BodyProjectsProps> = ({ isLoading }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
@@ -63,4 +63,4 @@ const ProjectsWrapper: React.FC<ProjectsWrapperProps> = ({ isLoading }) => {
   );
 };
 
-export default ProjectsWrapper;
+export default BodyProjects;

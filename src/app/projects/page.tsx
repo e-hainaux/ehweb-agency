@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import styles from "./page.module.css";
 import NavBar from "@/components/NavBar";
-import ProjectsWrapper from "@/components/projects/projectsWrapper";
+import BodyProjects from "@/components/projects/BodyProjects";
 import Splitter from "@/components/Splitter";
 import Footer from "@/components/Footer";
 
@@ -33,7 +33,7 @@ export default function About() {
         showLogo={showHeaderLogo}
         isNavBarTransparent={isNavBarTransparent}
       />
-      <ProjectsWrapper isLoading={false} />
+      <BodyProjects isLoading={false} />
       <Splitter />
       <Footer />
     </div>
