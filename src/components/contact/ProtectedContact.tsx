@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdMail, MdPhone } from "react-icons/md";
 import styles from "@/styles/contact/ProtectedContact.module.css";
-import OtherContacts from "./OtherContacts";
+import ContactIntro from "./ContactIntro";
 
 interface ContactInfo {
   email: string;
@@ -22,19 +22,8 @@ const ProtectedContact: React.FC<ContactInfo> = ({ email, phone }) => {
 
   return (
     <div className={styles.mainContainer}>
-      <OtherContacts />
+      <ContactIntro />
       <div className={styles.contactList}>
-        <div className={styles.contactItem}>
-          <MdMail className={styles.icon} />
-          {showEmail ? (
-            <span className={styles.contactInfo}>{email}</span>
-          ) : (
-            <button onClick={decodeEmail} className={styles.button}>
-              Afficher l&apos;email
-            </button>
-          )}
-        </div>
-
         <div
           className={
             showPhone ? styles.contactItemFlexStart : styles.contactItem
@@ -52,6 +41,16 @@ const ProtectedContact: React.FC<ContactInfo> = ({ email, phone }) => {
           ) : (
             <button onClick={decodePhone} className={styles.button}>
               Afficher le numéro
+            </button>
+          )}
+        </div>
+        <div className={styles.contactItem}>
+          <MdMail className={styles.icon} />
+          {showEmail ? (
+            <span className={styles.contactInfo}>{email}</span>
+          ) : (
+            <button onClick={decodeEmail} className={styles.button}>
+              Afficher l&apos;email
             </button>
           )}
         </div>
