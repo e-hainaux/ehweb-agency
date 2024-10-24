@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState, ElementType } from "react";
 import styles from "@/styles/CreationSteps.module.css";
 import { stepsOfCreation } from "@/app/data/stepsOfCreation";
 import Splitter from "./Splitter";
-import { DiGroovy } from "react-icons/di";
 
 interface Step {
   id: number;
