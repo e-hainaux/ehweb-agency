@@ -11,5 +11,5 @@
 .splitterContainer {
   width: 75%;
   height: 1px;
-  background-color: var(--text-secondary);
+  background-color: var(--text-secondary-darker);
 }
