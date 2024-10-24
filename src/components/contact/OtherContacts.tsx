@@ -7,9 +7,9 @@ export default function OtherContacts() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.textContainer}>
-        <p className={styles.text}>
-          Vous pouvez me contacter par le moyen qui vous convient le mieux :
-        </p>
+        <p className={styles.text}>Un projet ?</p>
+        <p className={styles.text}>Une idée ?</p>
+        <p className={styles.text}>Lancez-vous !</p>
       </div>
       <div className={styles.logosContainer}>
         <a

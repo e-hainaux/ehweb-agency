@@ -13,6 +13,7 @@ const BodyContact: React.FC = () => {
       <span className={styles.title}>Contact</span>
       <Splitter />
       <ProtectedContact email={email} phone={phone} />
+      <Splitter />
     </section>
   );
 };

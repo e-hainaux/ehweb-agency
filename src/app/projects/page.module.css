@@ -1,10 +1,11 @@
 .page {
   --background-main: #051622;
   --background-secondary: #001f33;
+
+  --text-neutral: #e5e7eb;
   --text-main: #1fbdb3;
   --text-secondary: #deb992;
   --text-secondary-darker: #967f69;
-
   --text-tertiary: #f8c471;
 
   --gray-rgb: 0, 0, 0;

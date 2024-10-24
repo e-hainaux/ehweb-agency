@@ -10,6 +10,13 @@
   margin: 32px;
 }
 
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 .text {
   color: var(--text-secondary);
   font-size: 1.3em;

@@ -35,10 +35,20 @@ const ProtectedContact: React.FC<ContactInfo> = ({ email, phone }) => {
           )}
         </div>
 
-        <div className={styles.contactItem}>
+        <div
+          className={
+            showPhone ? styles.contactItemFlexStart : styles.contactItem
+          }
+        >
           <MdPhone className={styles.icon} />
           {showPhone ? (
-            <span className={styles.contactInfo}>{phone}</span>
+            <div className={styles.phoneWrapper}>
+              <span className={styles.contactInfo}>{phone}</span>
+              <div className={styles.descriptionContainer}>
+                <p className={styles.description}>Du lundi au vendredi</p>
+                <p className={styles.description}>9h00 - 18h00</p>
+              </div>
+            </div>
           ) : (
             <button onClick={decodePhone} className={styles.button}>
               Afficher le numéro
