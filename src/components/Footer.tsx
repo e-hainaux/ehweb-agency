@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className={styles.mainContainer}>
       <div className={styles.footerInfos}>
-        <div className={styles.phone}>
+        <div className={styles.catchPhrase}>
           <div className={styles.titleContainer}>
             <h2 className={styles.title}>Échangeons ensemble</h2>
             <div className={styles.centeredLink}>
