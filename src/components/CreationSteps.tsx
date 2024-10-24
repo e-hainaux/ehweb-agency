@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, ElementType } from "react";
 import styles from "@/styles/CreationSteps.module.css";
 import { stepsOfCreation } from "@/app/data/stepsOfCreation";
 import Splitter from "./Splitter";
+import { DiGroovy } from "react-icons/di";
 
 interface Step {
   id: number;
@@ -25,13 +26,11 @@ const AnimatedStep: React.FC<AnimatedStepProps> = ({ step, isEven }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Mise à jour de la visibilité en fonction de l'état d'intersection
           setIsVisible(entry.isIntersecting);
         });
       },
       {
         threshold: 0.3,
-        // Ajout d'une marge pour déclencher l'observation un peu plus tôt/tard
         rootMargin: "50px",
       }
     );
@@ -57,16 +56,17 @@ const AnimatedStep: React.FC<AnimatedStepProps> = ({ step, isEven }) => {
       <div className={styles.textContainer}>
         <div className={styles.textWrapper}>
           <h2 className={styles.title}>{step.title}</h2>
-          <p className={styles.paragraph}>
-            {Array.isArray(step.paragraph)
-              ? step.paragraph.map((text: string, index: number) => (
-                  <span key={index}>
-                    {text}
-                    <br />
-                  </span>
-                ))
-              : step.paragraph}
-          </p>
+          <div className={styles.paragraphsContainer}>
+            {Array.isArray(step.paragraph) ? (
+              step.paragraph.map((text: string, index: number) => (
+                <p key={index} className={styles.paragraph}>
+                  {text}
+                </p>
+              ))
+            ) : (
+              <p className={styles.paragraph}>{step.paragraph}</p>
+            )}
+          </div>
         </div>
       </div>
       <div className={styles.voidContainer}></div>

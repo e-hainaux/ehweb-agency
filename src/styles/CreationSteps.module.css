@@ -107,7 +107,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-indent: 1em;
+
   line-height: 1.3em;
 }
 
@@ -127,9 +127,15 @@
   font-size: 1.4rem;
 }
 
+.paragraphsContainer {
+  flex: 1;
+}
+
 .paragraph {
-  width: 100%;
-  color: var(--text-secondary);
+  text-indent: 1em;
+  margin-bottom: 16px;
+  text-align: justify;
+  color: var(--text-neutral);
 }
 
 @media (max-width: 700px) {

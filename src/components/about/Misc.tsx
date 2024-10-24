@@ -55,7 +55,7 @@ export default function Misc() {
               </div>
               <div className={styles.paragraphsContainer}>
                 {Array.isArray(frame.paragraph) ? (
-                  frame.paragraph.map((text, index) => (
+                  frame.paragraph.map((text: string, index: number) => (
                     <p key={index} className={styles.paragraph}>
                       {text}
                     </p>
