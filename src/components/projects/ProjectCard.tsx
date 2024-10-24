@@ -64,14 +64,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         .project-title {
           font-size: 1.25rem;
           font-weight: bold;
-          color: #ffba39;
+          color: #deb992;
           margin: 1rem 0 0.5rem;
           padding: 0 1rem;
         }
 
         .project-description {
           font-size: 1rem;
-          color: #edeef3;
+          color: #e5e7eb;
           padding: 0 1rem 1rem;
         }
       `}</style>
