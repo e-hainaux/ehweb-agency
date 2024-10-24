@@ -49,6 +49,7 @@
   text-indent: 1em;
   margin-bottom: 16px;
   text-align: justify;
+  color: var(--text-neutral);
 }
 
 @media (max-width: 600px) {

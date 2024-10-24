@@ -5,7 +5,8 @@
   --text-neutral: #e5e7eb;
   --text-main: #1fbdb3;
   --text-secondary: #deb992;
-  --text-tertiary: #e91e63;
+  --text-tertiary: #d883b7;
+  --text-tertiary-darker: #e91e63;
 
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);

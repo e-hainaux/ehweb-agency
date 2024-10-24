@@ -127,7 +127,7 @@
     left: 0;
     width: 88%;
     height: 5px;
-    background-color: var(--text-tertiary);
+    background-color: var(--text-tertiary-darker);
   }
 
   .image {
