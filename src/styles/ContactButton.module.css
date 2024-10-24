@@ -15,7 +15,7 @@
   padding: 8px 20px;
   font-size: 1.2em;
   font-weight: bold;
-  color: whitesmoke;
+  color: var(--text-neutral);
   background-color: var(--background-secondary);
   border: 2px solid #1fbdb3;
   border-radius: 50px;
