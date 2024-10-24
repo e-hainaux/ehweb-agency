@@ -24,14 +24,35 @@
   color: var(--text-main);
 }
 
-.phone,
+.catchPhrase,
 .socialMedia,
-.location {
+.navigation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
+}
+
+.centeredLink {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.catchPhraseLink {
+  font-size: 1.2em;
+  font-weight: bold;
+
+  color: var(--text-secondary);
+  border-bottom: 4px solid var(--text-tertiary);
+}
+
+.catchPhraseLink:hover {
+  color: var(--text-neutral);
 }
 
 .title,
@@ -41,6 +62,18 @@
 
 .description {
   line-height: 32px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.link:hover {
+  color: var(--text-secondary);
 }
 
 .logosContainer {
@@ -56,15 +89,21 @@
 .logo {
   width: auto;
   height: 45px;
-
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 
   filter: drop-shadow(0 4px 8px rgba(222, 185, 146, 0.3));
+}
+.linkedIn {
+  color: #007ebb;
+}
+
+.gitHub {
+  color: white;
 }
 
 .credits {
