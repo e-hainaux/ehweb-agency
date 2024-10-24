@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
-import Image from "next/image";
+
 import Splitter from "./Splitter";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
