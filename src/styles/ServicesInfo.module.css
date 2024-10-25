@@ -20,7 +20,7 @@
 
 .mainTitle {
   font-size: 1.4em;
-  color: var(--text-secondary);
+  color: var(--text-main);
 }
 
 .serviceContainer {
@@ -32,8 +32,9 @@
   align-items: center;
   margin: 24px 0;
   padding: 0 56px;
-  background: rgba(5, 22, 34, 1);
-  border: 1px solid var(--text-secondary-darker);
+  background: rgba(17, 34, 65, 0.75);
+
+  border: 1px solid var(--text-main);
 }
 
 .reverse {
@@ -78,12 +79,12 @@
 
 .title {
   font-size: 1.4rem;
-  color: var(--text-main);
+  color: var(--text-secondary-darker);
 }
 
 .paragraph {
   width: 80%;
-  color: var(--text-neutral);
+  color: var(--text-secondary);
 }
 
 @media (max-width: 700px) {

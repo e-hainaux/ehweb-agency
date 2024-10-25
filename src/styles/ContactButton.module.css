@@ -17,7 +17,7 @@
   font-weight: bold;
   color: var(--text-neutral);
   background-color: var(--background-secondary);
-  border: 2px solid #1fbdb3;
+  border: 2px solid var(--text-secondary-darker);
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(31, 189, 179, 0.25);
@@ -26,7 +26,7 @@
 
 .button:hover {
   color: white;
-  border: 2px solid #17a39d;
+  border: 2px solid var(--text-secondary);
 
   transform: translateY(-2px);
   box-shadow: 0px 4px 6px rgba(31, 189, 179, 0.15);

@@ -52,6 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           height: 30vh;
           min-height: 230px;
           overflow: hidden;
+          background-color: #04171f;
         }
 
         .project-image {
@@ -64,14 +65,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         .project-title {
           font-size: 1.25rem;
           font-weight: bold;
-          color: #deb992;
+          color: var(--text-main);
           margin: 1rem 0 0.5rem;
           padding: 0 1rem;
         }
 
         .project-description {
           font-size: 1rem;
-          color: #e5e7eb;
+          color: var(--text-secondary);
           padding: 0 1rem 1rem;
         }
       `}</style>

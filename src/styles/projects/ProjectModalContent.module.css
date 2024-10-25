@@ -19,7 +19,7 @@
 
 .modalTitle {
   font-size: 2rem;
-  color: var(--text-secondary);
+  color: var(--text-secondary-darker);
   margin-bottom: 50px;
 }
 

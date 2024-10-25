@@ -47,7 +47,7 @@ export default function Misc() {
                 isVisible ? styles.fadeIn : styles.fadeOut
               }`}
             >
-              <IconComponent size={32} color="#d883b7" />{" "}
+              <IconComponent size={32} color="#ff4f81" />{" "}
             </div>
             <div className={styles.textContainer}>
               <div className={styles.subTitle}>

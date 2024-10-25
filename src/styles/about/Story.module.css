@@ -7,6 +7,7 @@
   align-items: flex-end;
   background: var(--background-main);
   z-index: 2;
+  padding-top: 40px;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -78,7 +79,7 @@
 }
 
 .subTitle {
-  color: var(--text-secondary);
+  color: var(--text-secondary-darker);
 }
 
 .storyContainer {
@@ -101,6 +102,7 @@
   width: 80%;
 }
 .paragraph {
+  color: var(--text-secondary);
   font-size: 1.2em;
   text-indent: 2em;
   margin-bottom: 24px;
@@ -155,7 +157,7 @@
   }
 
   .paragraph {
-    margin: 0 0 15px 0;
+    margin: 0 2vw 16px 0;
     text-align: justify;
   }
 
@@ -165,6 +167,9 @@
 }
 
 @media (max-width: 400px) {
+  .mainContainer {
+    padding-top: 24px;
+  }
   .imageContainer {
     width: 140px;
   }

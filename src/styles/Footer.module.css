@@ -10,7 +10,11 @@
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 
   /* border-top: 1px solid #967f69; */
-  background: linear-gradient(to bottom, #001f33 50%, #051622);
+  background: linear-gradient(
+    to bottom,
+    var(--background-main) 50%,
+    var(--background-secondary)
+  );
 }
 
 .footerInfos {
@@ -22,7 +26,6 @@
   width: 100%;
   height: 200px;
   padding: 8px;
-  color: var(--text-main);
 }
 
 .catchPhrase {
@@ -64,7 +67,7 @@
 .catchPhraseLink {
   font-size: 1.5em;
   font-weight: bold;
-  color: var(--text-secondary);
+  color: var(--text-neutral);
   position: relative;
   text-decoration: none;
 }
@@ -85,12 +88,12 @@
 }
 
 .catchPhraseLink:hover {
-  color: var(--text-neutral);
+  color: var(--text-main);
 }
 
 .title,
 .description {
-  color: var(--text-main);
+  color: var(--text-secondary);
 }
 
 .description {
@@ -105,8 +108,12 @@
   gap: 8px;
 }
 
-.link:hover {
+.link {
   color: var(--text-secondary);
+}
+
+.link:hover {
+  color: var(--text-secondary-darker);
 }
 
 .logosContainer {

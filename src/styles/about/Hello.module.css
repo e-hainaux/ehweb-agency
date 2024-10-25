@@ -115,9 +115,11 @@
   animation: slideRight 1s ease-out forwards;
 }
 
-.title,
-.paragraph {
+.title {
   color: var(--text-secondary);
+}
+.paragraph {
+  color: var(--text-secondary-darker);
 }
 .subTitle {
   color: var(--text-main);
@@ -236,7 +238,8 @@
     right: 0;
     text-align: center;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(17, 34, 65, 0.75);
+
     padding: 10px;
     color: var(--text-secondary);
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);

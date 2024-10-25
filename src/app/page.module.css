@@ -1,12 +1,12 @@
 .page {
-  --background-main: #051622;
-  --background-secondary: #001f33;
+  --background-main: #112241;
+  --background-secondary: #1e3547;
 
-  --text-neutral: #e5e7eb;
-  --text-main: #1fbdb3;
-  --text-secondary: #deb992;
-  --text-secondary-darker: #967f69;
-  --text-tertiary: #d883b7;
+  --text-neutral: #f5f5f5;
+  --text-main: #f2dea2;
+  --text-secondary: #a3c1da;
+  --text-secondary-darker: #3ba9db;
+  --text-tertiary: #ff4f81;
   --text-tertiary-darker: #e91e63;
 
   --gray-rgb: 0, 0, 0;
