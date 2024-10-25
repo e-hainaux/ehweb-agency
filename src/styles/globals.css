@@ -36,6 +36,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
