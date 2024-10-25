@@ -10,6 +10,17 @@ const geistSans = localFont({
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
+});
+
+const inter = localFont({
+  src: "./fonts/InterVariableFont.ttf",
+  variable: "--font-inter",
+  weight: "100 900",
+});
+
+const sourceSans = localFont({
+  src: "./fonts/SourceSans3VariableFont.ttf",
+  variable: "--font-source-sans",
   weight: "100 900",
 });
 
@@ -40,7 +51,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${sourceSans.variable}`}
+      >
         {children}
       </body>
     </html>

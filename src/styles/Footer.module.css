@@ -65,6 +65,8 @@
 }
 
 .catchPhraseLink {
+  font-family: var(--font-inter);
+
   font-size: 1.5em;
   font-weight: bold;
   color: var(--text-neutral);
@@ -91,6 +93,10 @@
   color: var(--text-main);
 }
 
+.title {
+  font-family: var(--font-inter);
+}
+
 .title,
 .description {
   color: var(--text-secondary);
@@ -109,6 +115,7 @@
 }
 
 .link {
+  font-family: var(--font-source-sans);
   color: var(--text-secondary);
 }
 
@@ -147,6 +154,7 @@
 }
 
 .credits {
+  font-family: var(--font-source-sans);
   font-size: 1.2em;
   color: var(--text-secondary);
 }

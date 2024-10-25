@@ -31,7 +31,7 @@ const BodyProjects: React.FC<BodyProjectsProps> = ({ isLoading }) => {
 
   return (
     <section className={styles.mainContainer}>
-      <span className={styles.title}>Réalisations</span>
+      <h2 className={styles.title}>Réalisations</h2>
       <Splitter />
       <div className={styles.projectsGrid}>
         {projects.map((project) => (

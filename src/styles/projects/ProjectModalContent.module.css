@@ -84,9 +84,10 @@
   padding: 10px 20px;
   margin-bottom: 16px;
   background-color: var(--background-main);
+
   color: var(--text-main);
   font-weight: 500;
-
+  font-family: var(--font-source-sans);
   text-decoration: none;
   border-radius: 5px;
   border: 1px solid var(--text-main);

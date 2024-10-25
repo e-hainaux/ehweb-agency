@@ -38,7 +38,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 48px;
-  padding-top: 120px;
+  padding-top: 110px;
   overflow: visible;
   z-index: 999;
   transition: transform 0.8s ease-out;
@@ -116,17 +116,17 @@
 }
 
 .title {
+  font-family: var(--font-inter);
   color: var(--text-secondary);
+  font-size: 2em;
+  margin-bottom: 24px;
 }
 .paragraph {
   color: var(--text-secondary-darker);
 }
 .subTitle {
+  font-family: var(--font-source-sans);
   color: var(--text-main);
-}
-
-.title {
-  font-size: 2em;
 }
 
 .subTitle,
@@ -142,6 +142,9 @@
 }
 
 @media (max-width: 600px) {
+  .title {
+    margin-bottom: 8px;
+  }
   @keyframes fadeOut {
     0% {
       opacity: 1;
@@ -241,6 +244,8 @@
     background: rgba(17, 34, 65, 0.75);
 
     padding: 10px;
+
+    font-family: var(--font-inter);
     color: var(--text-secondary);
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
     transition: opacity 1s ease-out, transform 1s ease-out;

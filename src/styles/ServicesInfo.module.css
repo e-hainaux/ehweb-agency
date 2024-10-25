@@ -19,6 +19,7 @@
 }
 
 .mainTitle {
+  font-family: var(--font-inter);
   font-size: 1.4em;
   color: var(--text-main);
 }
@@ -78,12 +79,14 @@
 }
 
 .title {
+  font-family: var(--font-inter);
   font-size: 1.4rem;
   color: var(--text-secondary-darker);
 }
 
 .paragraph {
   width: 80%;
+  font-family: var(--font-source-sans);
   color: var(--text-secondary);
 }
 

@@ -12,6 +12,7 @@
 }
 
 .button {
+  font-family: var(--font-source-sans);
   padding: 8px 20px;
   font-size: 1.2em;
   font-weight: bold;

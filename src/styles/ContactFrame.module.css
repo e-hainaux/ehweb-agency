@@ -16,6 +16,7 @@
 
 .question,
 .answer {
+  font-family: var(--font-inter);
   font-size: 24px;
   font-weight: bold;
 }

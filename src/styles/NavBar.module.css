@@ -59,6 +59,7 @@
   align-items: center;
   text-decoration: none;
   white-space: nowrap;
+  font-family: var(--font-source-sans);
   font-weight: bold;
   color: var(--text-secondary-darker);
   position: relative;

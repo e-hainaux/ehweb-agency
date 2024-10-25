@@ -10,7 +10,7 @@ const BodyContact: React.FC = () => {
   const phone = `${phoneParts.part1} ${phoneParts.part2} ${phoneParts.part3}`;
   return (
     <section className={styles.mainContainer}>
-      <span className={styles.title}>Contact</span>
+      <h2 className={styles.title}>Contact</h2>
       <Splitter />
       <ProtectedContact email={email} phone={phone} />
       <Splitter />
