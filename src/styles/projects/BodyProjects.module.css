@@ -38,14 +38,6 @@
   margin-top: 32px;
 }
 
-/* .projectCard {
-  width: 100%;
-  background: transparent;
-  aspect-ratio: 1;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-} */
-
 .projectCard:hover {
   transform: scale(1.02);
 }

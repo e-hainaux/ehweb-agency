@@ -55,16 +55,18 @@
 
 .button {
   padding: 0.5rem 1rem;
-  color: var(--text-main);
+  color: var(--text-secondary);
   font-size: 1.2em;
   border: none;
-  background: none;
+  background: var(--background-main);
+  border-radius: 8px;
+  border: 1px solid var(--text-secondary);
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 .button:hover {
-  color: #1d4ed8;
+  color: var(--text-neutral);
 }
 
 .descriptionContainer {
@@ -74,5 +76,5 @@
   align-items: flex-start;
   gap: 8px;
 
-  color: var(--text-main);
+  color: var(--text-secondary);
 }
