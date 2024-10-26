@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           width: 100%;
           height: 30vh;
           min-height: 230px;
-          overflow: hidden;
+          overflow: visible;
           background-color: #04171f;
         }
 

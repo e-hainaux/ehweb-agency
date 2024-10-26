@@ -12,6 +12,17 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "EH Web",
+    description: "Site Next (TS) & React",
+    imageUrl: "/images/projectsImages/ehwebWithBkgrd.svg",
+    fullDescription:
+      "L'emploi de débutants dans le développement web étant devenu compliqué courant 2024, j'ai décidé de travailler un peu en freelance en attendant une opportunité en entreprise. Pour cela, il me fallait un site qui ait une apparence plus professionnelle que mon portfolio initial. J'ai donc monté ce site de toutes pièces en poursuivant mon apprentissage de React et Next, certains fonctionnements ayant évolué depuis ma formation. J'ai également pris à la fois le temps et le plaisir de travailler sur le design et les animations CSS.",
+    technologies: ["React", "Next", "Typescript"],
+    githubLink: "",
+    liveLink: "",
+  },
+  {
+    id: 2,
     title: "Furigana App",
     description: "App Nest.js & Vue3 (+ Tailwind)",
     imageUrl: "/images/projectsImages/LogoFuriganaApp.png",
@@ -22,7 +33,7 @@ export const projects: Project[] = [
     liveLink: "https://furigana-app.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Gamin Retro APP",
     description: "App Express & React",
     imageUrl: "/images/projectsImages/GaminRetroLogo.png",
@@ -33,7 +44,7 @@ export const projects: Project[] = [
     liveLink: "https://app.gaminretro.fr",
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio",
     description: "Site Next (TS) & React",
     imageUrl: "/images/projectsImages/ehwebLogo.svg",
@@ -44,7 +55,7 @@ export const projects: Project[] = [
     liveLink: "https://ehweb.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "On Joue Quand",
     description: "Appli Nest & React Native (développement en cours)",
     imageUrl: "/images/projectsImages/OJQ.png",
@@ -57,7 +68,7 @@ export const projects: Project[] = [
     liveLink: "https://fr.ulule.com/on-joue-quand/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Helene Pro +",
     description: "Site Express & React (développement en cours)",
     imageUrl: "/images/projectsImages/HelenePetSitting.png",
@@ -68,7 +79,7 @@ export const projects: Project[] = [
     liveLink: "https://helenepetsitting-frontend.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "SYA - Sara Yoga Arras",
     description: "Site Express & React (développement en cours)",
     imageUrl: "/images/projectsImages/SYA.png",
@@ -79,7 +90,7 @@ export const projects: Project[] = [
     liveLink: "https://sya-frontend.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "DressCode",
     description: "Appli Express & React Native (MVP de fin de formation)",
     imageUrl: "/images/projectsImages/DressCode.png",
@@ -91,7 +102,7 @@ export const projects: Project[] = [
       "https://www.linkedin.com/posts/e-hainaux_demoday-javascript-reconversion-activity-7178679398005403649-4NIw?utm_source=share&utm_medium=member_desktop",
   },
   {
-    id: 8,
+    id: 9,
     title: "GaminRetro",
     description: "Site WordPress",
     imageUrl: "/images/projectsImages/GaminRetro.png",
@@ -102,7 +113,7 @@ export const projects: Project[] = [
     liveLink: "https://gaminretro.fr/",
   },
   {
-    id: 9,
+    id: 10,
     title: "FibroQuoi",
     description: "Site HTML5 & CSS3",
     imageUrl: "/images/projectsImages/FibroQuoi.png",
