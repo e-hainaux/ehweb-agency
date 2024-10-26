@@ -7,7 +7,7 @@
   align-items: center;
   background: var(--background-main);
   position: relative;
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .lineContainer {
@@ -142,6 +142,9 @@
 }
 
 @media (max-width: 700px) {
+  .mainContainer {
+    padding: 16px;
+  }
   .mainTitle {
     font-weight: normal;
     font-size: 1.2em;
@@ -151,7 +154,9 @@
   .reverse {
     display: flex;
     width: 100%;
+    min-width: 250px;
     height: 50vh;
+    min-height: 400px;
     padding: 16px;
     flex-direction: column;
   }
