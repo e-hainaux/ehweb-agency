@@ -15,7 +15,7 @@ export const frameData: Frame[] = [
     subtitle: "J'aime",
     paragraph: [
       "Réfléchir à l'organisation des données en fonction du besoin du projet.",
-      "J'apprécie également concevoir le design d'une application pour offrir une expérience fluide et originale.",
+      "J'apprécie également de concevoir le design d'une application pour offrir une expérience fluide et originale.",
     ],
     picto: FaRegHeart,
   },
