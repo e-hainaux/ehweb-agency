@@ -9,12 +9,13 @@
   padding: 40px;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 
-  /* border-top: 1px solid #967f69; */
   background: linear-gradient(
     to bottom,
     var(--background-main) 50%,
     var(--background-secondary)
   );
+
+  z-index: 999;
 }
 
 .footerInfos {
