@@ -1,3 +1,14 @@
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 .page {
   --background-main: #112241;
   --background-secondary: #1e3547;
@@ -15,7 +26,6 @@
 
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
-  background: var(--background-main);
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -26,6 +36,8 @@
   height: auto;
   min-height: 100vh;
   font-family: var(--font-geist-sans);
+
+  animation: fadeInPage 0.6s ease-out;
 }
 
 @media (prefers-color-scheme: dark) {
