@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../styles/globals.css";
+import ProgressBar from "@/components/ProgressBar";
 import { LoadingProvider } from "./context/LoadingContext";
 
 const geistSans = localFont({
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${sourceSans.variable}`}
       >
+        <ProgressBar />
         <LoadingProvider>{children}</LoadingProvider>
       </body>
     </html>
