@@ -1,3 +1,16 @@
+@keyframes blurryFadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(-150px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0px);
+  }
+}
+
 .mainContainer {
   position: fixed;
   top: 0;
@@ -10,6 +23,8 @@
 
   z-index: 1000;
   transition: all 0.3s ease;
+
+  animation: blurryFadeIn 2s ease-out;
 }
 
 .navContent {

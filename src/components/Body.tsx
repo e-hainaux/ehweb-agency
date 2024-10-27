@@ -5,10 +5,16 @@ import Splitter from "./Splitter";
 import ServicesInfo from "./ServicesInfo";
 import ContactFrame from "./ContactFrame";
 import CreationSteps from "./CreationSteps";
+import FirstScreen from "./FirstScreen";
 
-export default function Body() {
+interface BodyProps {
+  isFirstScreenLogoVisible: boolean;
+}
+
+export default function Body({ isFirstScreenLogoVisible }: BodyProps) {
   return (
     <main className={styles.mainContainer}>
+      <FirstScreen isLogoVisible={isFirstScreenLogoVisible} />
       <CorporateImage />
       <Splitter />
       <ServicesInfo />

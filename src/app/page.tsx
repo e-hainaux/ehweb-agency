@@ -34,10 +34,9 @@ export default function Home() {
     <div className={styles.page}>
       <Header
         showHeaderLogo={showHeaderLogo}
-        isFirstScreenLogoVisible={isFirstScreenLogoVisible}
         isNavBarTransparent={isNavBarTransparent}
       />
-      <Body />
+      <Body isFirstScreenLogoVisible={isFirstScreenLogoVisible} />
       <Footer />
     </div>
   );
