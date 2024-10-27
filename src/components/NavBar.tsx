@@ -3,6 +3,7 @@ import styles from "@/styles/NavBar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 interface NavBarProps {
   showLogo: boolean;
@@ -12,6 +13,7 @@ interface NavBarProps {
 export default function NavBar({ showLogo, isNavBarTransparent }: NavBarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
@@ -54,7 +56,9 @@ export default function NavBar({ showLogo, isNavBarTransparent }: NavBarProps) {
         <div className={styles.leftGroup}>
           <Link
             href="/"
-            className={`${styles.link} ${styles.homeLink}`}
+            className={`${styles.link} ${styles.homeLink} ${
+              pathname === "/" ? styles.active : ""
+            }`}
             onClick={handleLinkClick}
           >
             Accueil
@@ -81,24 +85,36 @@ export default function NavBar({ showLogo, isNavBarTransparent }: NavBarProps) {
         >
           <Link
             href="/"
-            className={`${styles.link} ${styles.homeLink} ${styles.hideOnDesktop}`}
+            className={`${styles.link} ${styles.homeLink} ${
+              styles.hideOnDesktop
+            } ${pathname === "/" ? styles.active : ""}`}
             onClick={handleLinkClick}
           >
             Accueil
           </Link>
-          <Link href="/about" className={styles.link} onClick={handleLinkClick}>
+          <Link
+            href="/about"
+            className={`${styles.link} ${
+              pathname === "/about" ? styles.active : ""
+            }`}
+            onClick={handleLinkClick}
+          >
             À propos
           </Link>
           <Link
             href="/projects"
-            className={styles.link}
+            className={`${styles.link} ${
+              pathname === "/projects" ? styles.active : ""
+            }`}
             onClick={handleLinkClick}
           >
             Réalisations
           </Link>
           <Link
             href="/contact"
-            className={styles.link}
+            className={`${styles.link} ${
+              pathname === "/contact" ? styles.active : ""
+            }`}
             onClick={handleLinkClick}
           >
             Contact

@@ -24,7 +24,7 @@
   z-index: 1000;
   transition: all 0.3s ease;
 
-  animation: blurryFadeIn 2s ease-out;
+  /* animation: blurryFadeIn 2s ease-out; */
 }
 
 .navContent {
