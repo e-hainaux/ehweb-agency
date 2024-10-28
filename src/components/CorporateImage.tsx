@@ -7,8 +7,8 @@ export function CorporateImage() {
     <div className={styles.imageContainer}>
       <Image
         src="/images/CorporateImage.png"
-        width={300}
-        height={300}
+        width={900}
+        height={600}
         quality={100}
         alt="Logo Eh Web"
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
