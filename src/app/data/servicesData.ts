@@ -11,7 +11,7 @@ export const servicesInfo: Service[] = [
     title: "Site monopage",
     paragraph:
       "Un site vitrine moderne vous permet de communiquer sur votre activité de manière simple au plus grand nombre.",
-    imageUrl: "/images/networkPicto.png",
+    imageUrl: "/images/networkPicto.svg",
   },
 
   {
@@ -21,7 +21,7 @@ export const servicesInfo: Service[] = [
       "Vous avez besoin de plus de fonctionnalités ?",
       "Maîtrisez votre communication avec un site web complet.",
     ],
-    imageUrl: "/images/registerPicto.png",
+    imageUrl: "/images/registerPicto.svg",
   },
 
   {
@@ -29,6 +29,6 @@ export const servicesInfo: Service[] = [
     title: "Applicatif",
     paragraph:
       "Application mobile ou logiciel professionnel de gestion, nous construisons ensemble selon vos besoins.",
-    imageUrl: "/images/mobileAppPicto.png",
+    imageUrl: "/images/applicationPicto.svg",
   },
 ];
