@@ -35,15 +35,14 @@ const BodyProjects: React.FC<BodyProjectsProps> = ({ isLoading }) => {
       <Splitter />
       <div className={styles.projectsGrid}>
         {projects.map((project) => (
-          <>
-            <ProjectCard
-              id={project.id}
-              title={project.title}
-              description={project.description}
-              imageUrl={project.imageUrl}
-              onClick={() => openModal(project)}
-            />
-          </>
+          <ProjectCard
+            key={project.id}
+            id={project.id}
+            title={project.title}
+            description={project.description}
+            imageUrl={project.imageUrl}
+            onClick={() => openModal(project)}
+          />
         ))}
       </div>
 

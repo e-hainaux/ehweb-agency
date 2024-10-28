@@ -70,6 +70,7 @@ export default function NavBar({ showLogo, isNavBarTransparent }: NavBarProps) {
             alt="Header Logo"
             width={80}
             height={80}
+            priority={true}
             className={`${styles.logo} ${showLogo ? styles.show : styles.hide}`}
           />
         </div>

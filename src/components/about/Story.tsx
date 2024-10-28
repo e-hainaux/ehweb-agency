@@ -47,6 +47,7 @@ export default function Story() {
           width={500}
           height={500}
           quality={100}
+          priority={true}
           alt="Photo of Emilien"
           style={{ objectFit: "contain" }}
           className={styles.image}
