@@ -41,9 +41,7 @@ export default function Hello() {
           quality={100}
           priority={true}
           alt="Photo of Emilien"
-          style={{
-            objectFit: "contain",
-          }}
+          style={{ width: "auto", height: "auto", objectFit: "contain" }}
           className={styles.image}
         />
       </div>

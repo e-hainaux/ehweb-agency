@@ -21,6 +21,7 @@ export default function FirstScreen({ isLogoVisible }: FirstScreenProps) {
             width={150}
             height={150}
             alt="Logo Eh Web"
+            priority={true}
             style={{ width: "50%", height: "auto", objectFit: "contain" }}
           />
         </div>
