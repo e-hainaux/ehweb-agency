@@ -158,6 +158,19 @@
   font-family: var(--font-source-sans);
   font-size: 1.2em;
   color: var(--text-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.linkTOS {
+  text-decoration: underline;
+}
+
+.linkTOS:hover {
+  color: var(--text-neutral);
 }
 
 @media (max-width: 700px) {
@@ -184,7 +197,24 @@
     gap: 24px;
   }
 
+  .title {
+    font-size: 1.4em;
+  }
+
   .linksContainer {
     align-items: center;
+  }
+  .link {
+    font-size: 1.2em;
+  }
+  .credits {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .dash {
+    display: none;
   }
 }

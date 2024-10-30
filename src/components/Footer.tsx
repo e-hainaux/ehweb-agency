@@ -67,7 +67,16 @@ export default function Footer() {
       </div>
       <Splitter />
       <div className={styles.credits}>
-        <p>Emilien Hainaux © 2024</p>
+        <p>©2024 EH Web</p>
+        <p className={styles.dash}>-</p>
+        <Link
+          href="/terms-of-service"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.linkTOS}
+        >
+          Mentions légales
+        </Link>
       </div>
     </footer>
   );
