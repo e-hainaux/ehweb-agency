@@ -18,7 +18,7 @@ const BodyTermsOfService: React.FC = () => {
       <article className={styles.article}>
         <h2 className={styles.title}>Édition du site</h2>
         <p className={styles.paragraph}>
-          {`Le présent site, accessible à l’URL www.ehweb.fr (le « Site »), est édité par Emilien Hainaux, résidant 6 rue Pasteur 62217 Achicourt, de nationalité Française (France), né(e) le 12/10/1982. (Numéro SIRET : 93372169800019).`}
+          {`Le présent site, accessible à l’URL www.ehweb.fr (le « Site »), est édité par Emilien Hainaux, résidant 6 rue Pasteur 62217 Achicourt, de nationalité Française (France), né le 12/10/1982. (Numéro SIRET : 93372169800019).`}
         </p>
       </article>
       <Splitter />
