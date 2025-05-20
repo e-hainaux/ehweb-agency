@@ -34,7 +34,7 @@ const BodyProjects: React.FC<BodyProjectsProps> = ({ isLoading }) => {
       <h2 className={styles.title}>Réalisations</h2>
       <Splitter />
       <div className={styles.projectsGrid}>
-        {projects.map((project) => (
+        {[...projects].reverse().map((project) => (
           <ProjectCard
             key={project.id}
             id={project.id}
