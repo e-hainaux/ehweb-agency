@@ -12,6 +12,17 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "Hélène Pro +",
+    description: "Site Next (TS) & React (développement en cours)",
+    imageUrl: "/images/projectsImages/HelenePetSitting.png",
+    fullDescription:
+      "Il s'agit d'un projet indépendant ayant pour but de présenter une activité de petsitting. Initialement débuté en 2024 afin de mettre en pratique mes connaissances acquises lors de ma formation à La Capsule, nous avons décidé d'une refonte générale début 2025. Le projet est en cours de développement.",
+    technologies: ["React", "Next", "Typescript"],
+    githubLink: "",
+    liveLink: "https://heleneproplus-next2025.vercel.app/",
+  },
+  {
+    id: 2,
     title: "EH Web",
     description: "Site Next (TS) & React",
     imageUrl: "/images/projectsImages/ehwebWithBkgrd.svg",
@@ -22,7 +33,7 @@ export const projects: Project[] = [
     liveLink: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Furigana App",
     description: "App Nest.js & Vue3 (+ Tailwind)",
     imageUrl: "/images/projectsImages/LogoFuriganaApp.png",
@@ -33,7 +44,7 @@ export const projects: Project[] = [
     liveLink: "https://furigana-app.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Gamin Retro APP",
     description: "App Express & React",
     imageUrl: "/images/projectsImages/GaminRetroLogo.png",
@@ -44,7 +55,7 @@ export const projects: Project[] = [
     liveLink: "https://app.gaminretro.fr",
   },
   {
-    id: 4,
+    id: 5,
     title: "Portfolio",
     description: "Site Next (TS) & React",
     imageUrl: "/images/projectsImages/ehwebLogo.svg",
@@ -55,7 +66,7 @@ export const projects: Project[] = [
     liveLink: "https://ehweb.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "On Joue Quand",
     description: "Appli Nest & React Native (développement en cours)",
     imageUrl: "/images/projectsImages/OJQ.png",
@@ -67,30 +78,30 @@ export const projects: Project[] = [
     githubLink: "",
     liveLink: "https://fr.ulule.com/on-joue-quand/",
   },
+  // {
+  //   id: 7,
+  //   title: "Helene Pro +",
+  //   description: "Site Express & React (développement en cours)",
+  //   imageUrl: "/images/projectsImages/HelenePetSitting.png",
+  //   fullDescription:
+  //     "Il s'agit d'un projet indépendant ayant pour but de présenter une activité de petsitting. Ce projet me permet de mettre en pratique mes connaissances acquises lors de ma formation à La Capsule. Le projet est en cours de développement.",
+  //   technologies: ["Node.js", "Express", "React"],
+  //   githubLink: "",
+  //   liveLink: "https://helenepetsitting-frontend.vercel.app/",
+  // },
   {
-    id: 6,
-    title: "Helene Pro +",
-    description: "Site Express & React (développement en cours)",
-    imageUrl: "/images/projectsImages/HelenePetSitting.png",
-    fullDescription:
-      "Il s'agit d'un projet indépendant ayant pour but de présenter une activité de petsitting. Ce projet me permet de mettre en pratique mes connaissances acquises lors de ma formation à La Capsule. Le projet est en cours de développement.",
-    technologies: ["Node.js", "Express", "React"],
-    githubLink: "",
-    liveLink: "https://helenepetsitting-frontend.vercel.app/",
-  },
-  {
-    id: 7,
+    id: 8,
     title: "SYA - Sara Yoga Arras",
     description: "Site Express & React (développement en cours)",
     imageUrl: "/images/projectsImages/SYA.png",
     fullDescription:
-      "Il s'agit d'un projet indépendant ayant pour but de présenter une activité de yoga. Ce projet me permet de mettre en pratique mes connaissances acquises lors de ma formation à La Capsule. En créant ce site, j'ai également appris à mettre en place un système de vérification reCAPTCHA. Le projet est en cours de développement.",
+      "Il s'agit d'un projet indépendant ayant pour but de présenter une activité de yoga. Ce projet me permet de mettre en pratique mes connaissances acquises lors de ma formation à La Capsule. En créant ce site, j'ai également appris à mettre en place un système de vérification reCAPTCHA. Le projet est actuellement en pause.",
     technologies: ["Node.js", "Express", "React"],
     githubLink: "",
     liveLink: "https://sya-frontend.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     title: "DressCode",
     description: "Appli Express & React Native (MVP de fin de formation)",
     imageUrl: "/images/projectsImages/DressCode.png",
@@ -102,7 +113,7 @@ export const projects: Project[] = [
       "https://www.linkedin.com/posts/e-hainaux_demoday-javascript-reconversion-activity-7178679398005403649-4NIw?utm_source=share&utm_medium=member_desktop",
   },
   {
-    id: 9,
+    id: 10,
     title: "GaminRetro",
     description: "Site WordPress",
     imageUrl: "/images/projectsImages/GaminRetro.png",
@@ -113,7 +124,7 @@ export const projects: Project[] = [
     liveLink: "https://gaminretro.fr/",
   },
   {
-    id: 10,
+    id: 11,
     title: "FibroQuoi",
     description: "Site HTML5 & CSS3",
     imageUrl: "/images/projectsImages/FibroQuoi.png",
